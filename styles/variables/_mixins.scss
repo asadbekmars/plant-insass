@@ -1,0 +1,28 @@
+@mixin display($gap:0px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    gap:$gap; 
+}
+
+@mixin ptext($padding:0px 0px 0px 0px) {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 160%;
+    color: rgba(8, 24, 0, 0.6);
+    padding: $padding;
+}
+
+@mixin img() {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin h2text() {
+    font-weight: 800;
+    font-size: 57px;
+    line-height: 140%;
+    color: $primaryBlack;
+}

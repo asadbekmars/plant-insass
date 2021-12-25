@@ -1,0 +1,58 @@
+.section4{
+    @include display();
+    padding: 160px 190px 130px 190px;
+
+
+    h2{
+        @include h2text();
+    }
+
+    .img-div3{
+        width: 499px;
+        height: 442px;
+        background: $secondaryColor;
+        position: relative;
+
+        img{
+            @include img();
+        } 
+        
+        .white{
+            z-index: 1;
+            @include img();
+            position: absolute;
+            width: 126px;
+            height: 126px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+
+            .white2{
+                @include img();
+                width: 96px;
+                height: 96px;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+
+                .white3{
+                    @include img();
+                    width: 68px;
+                    height: 68px;
+                    background: #FFFFFF;
+                    border-radius: 50%;
+                }
+            }
+        }//white
+    }
+
+    .right{
+        width: 528px;
+        height: 543px;
+    }
+
+    p{
+        @include ptext();
+        padding-top: 40px;
+    }
+
+
+}

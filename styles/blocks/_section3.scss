@@ -1,0 +1,45 @@
+.section3{
+    @include display();
+    
+    h2{
+        @include h2text();
+    }
+
+    .img-div2{
+        width: 492px;
+        height: 252px;
+        background: $secondaryColor;
+
+        img{
+            @include img();
+        }
+
+        
+    }
+
+    .right{
+        width: 528px;
+        height: 437px;
+    }
+
+    .check-div{
+        @include display(20px);
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 60px;
+        
+        .check-box{
+            @include display(26px);
+
+            .check{
+                width: 40px;
+                height: 40px;
+                background: #418A1C;
+
+                img{
+                @include img()  ;
+                }
+            }
+        }
+    }//check-div
+}

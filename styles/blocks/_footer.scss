@@ -1,0 +1,55 @@
+footer{
+    @include display();
+    align-items: flex-start;
+    height: 369px;
+    background: $secondaryColor;
+    padding: 109px 190px ;
+    margin-top: 130px;
+    position: relative;
+
+    ul{
+        list-style: none;
+
+        a{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            color: #000A01;  
+            text-decoration: none;
+        }
+
+        li{
+            padding-bottom: 15px;
+        }
+
+        .first{
+            a{
+              font-weight: bold;  
+            }
+            
+        }
+    }//ul
+
+    .icons{
+        @include display(15px);
+        margin-top: 15px;
+
+        .box{
+            width: 37px;
+            height: 37px;
+            background: $primaryBlack;
+            border-radius: 50%;
+
+            img{
+                @include img();
+                padding-bottom: 2px;
+            }
+        }
+    }//icons
+
+    .footer-img{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

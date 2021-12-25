@@ -1,0 +1,35 @@
+.section-2{
+    @include display();
+    padding: 130px 190px;
+
+    h2{
+        font-weight: 800;
+        font-size: 57px;
+        line-height: 140%;
+        color: $primaryBlack;
+    }
+
+    .img-div{
+        width: 550px;
+        height: 369px;
+        background: $secondaryColor;
+
+        img{
+           @include img();
+        } 
+    }
+
+    .right{
+        width: 436.27px;
+        height: 383px;
+        }
+
+    p{
+        @include ptext(48px 0 30px 0);
+        margin-bottom: 30px;
+    }
+
+    .three{
+        margin:0;
+    }
+}
